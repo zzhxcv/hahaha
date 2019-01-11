@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+{#		<script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js'></script>#}
+		 <script src="{{url_for('static',filename='jquery-3.3.1.js')}}" type="text/javascript"></script>
+		<style>
+			a{
+				text-decoration: none;
+			}
+			{#div{#}
+			{#		outline-style: dashed;#}
+			{#		outline-width: 1px;#}
+			{#		outline-color: mediumvioletred;#}
+			{#	}#}
+			body{ 
+				 background: #F7F7F7;
+			     margin: 0px;
+				 padding: 0px;
+			}
+			.nav{
+				    background: #1E89E0;
+    				height: 60px;
+			}
+			
+			  .vertical-center{
+			  	  
+			  	  position: relative;
+				  top: 50%;
+				  transform: translateY(-50%); 
+			  }
+		    .nav-2{
+		    	display:inline-block;
+		    	float: right;
+		    	position: relative;
+			    top: 13px;
+			   
+			    width:33%
+		    }
+		    .nav-1{
+		    	display: inline-block;
+		    	position: relative;
+    			left: 9%;
+    			height:60px;
+    			width:57%
+		    }
+			.a-2{
+				color:white;
+				position: relative;
+				text-decoration: none;
+				top:-23px;
+    			margin:4%;
+			}
+			.a-3{
+				
+				position: relative;
+				text-decoration: none;	
+				margin:5%; 
+				color: #D2E7F9;
+   				font-size: 13px;
+			}
+			.aa-3{
+				    color:white;
+				    margin-left: 19%;
+			}
+
+			.nav-2 img{
+				position: relative;
+				bottom: -7px;
+			}
+			
+			.main{
+				width:1200px;
+				margin: 0 auto;
+				height:700px;
+				background: white;
+			}
+			.main-1{
+				width:100%;
+				height:200px;
+			}
+			.main-11{
+			   width: 100%;
+			   height:100px;
+			   position:relative;
+			}
+			.main-12{
+			   width: 100%;
+			   height:100px;
+			   line-height: 3;
+			}
+			.main-13{
+				width:100%;
+				display: inline;
+				height: 100px;
+
+			}
+			.main-111{
+				    width: 296px;
+                    display: inline-block;
+                    margin-bottom: 20px;
+			}
+		
+			.-main-111{
+				display: flex;
+			}
+			.main-1111{
+				flex-grow:1;
+				cursor:pointer;
+			
+			}
+			.main-1112{
+				flex-grow:15;
+				line-height:1.5;
+				cursor:pointer;
+			}
+			
+			.main-1112 #pei-1{
+				color:gray;
+				font-size: 13px;
+			}
+			.main-1112 strong{
+				font-size:16px;
+			}
+			.main-1111 img{
+				    display: block;
+				    margin-top: 10px;
+				    margin-left: 10px;
+			}
+			.main-1111 span{
+				margin-left: 20px;
+				font-size: 13px;
+				color: gray;
+			}
+		
+            #tooltip{
+            	background:white;
+            	position: absolute;
+			    border: 1px solid #ccc;
+            	display: inline-block;
+            	line-height: 3;
+            	padding:20px;
+            	
+            }
+            .d-one{
+            	font-size:19px;
+            }
+            .d-two,.d-three,.d-four,.d-five{
+            	font-size: 13px;
+            	color:gray;
+            }
+            .d-four{
+            	background:#CFCFCF;
+            	text-align: center;
+            }
+	       .bb{
+	            			height:33px;
+						    float: right;
+						    margin-right: 11%;
+					    	margin-top: 1%;
+	            }
+            .haa{
+            	        width: 236px;
+					    height: 27px;
+					    float: right;
+					  
+					    margin-top: 1%;
+				    
+            }
+            
+            .d-6{
+             
+             	position:absolute;
+         	    right: 11%;
+    			top: 48%;
+            }
+            .a-5,.a-4{
+            	font-size: 13px;
+            	margin: 1.3%;
+            	cursor: pointer;
+            	color:darkslategray;
+            }
+            .a-4:hover,.a-5:hover{
+            	background:lightgray;
+            }
+            
+		</style>
+	</head>
+	<body>
+		<div class='nav'> 
+			<div class='nav-1'>
+		        <a  class='a-1' href='#'><img src='{{ url_for("static",filename="img/index/e01.png") }}'/></a>
+				<a class='a-2'href='#'>首页</a>
+				<a class='a-2'href='#'>我的订单</a>
+				<a class='a-2'href='#'>加盟合作</a>
+				<a class='a-2'href='#'>我的客服</a>
+			</div>
+			<div class='nav-2'>
+				<a class='a-3' href='#'>规则中心</a>
+				<a class='a-3'href='#'><img src='{{ url_for("static",filename="img/index/e02.png") }}'/>手机应用</a>
+				<a class='a-3 aa-3'href='#'><img src='{{ url_for("static",filename="img/index/e03.png") }}'/>登录/注册</a>
+			</div>
+		</div>
+		<div class='main'>
+			<div class='main-1'>
+				<div class='main-11'>
+					<button class='bb'>搜索</button>
+					<!--<lable for='ha'>搜索美食或商家</lable>-->
+					<input id='ha' class='haa' placeholder="搜索美食或商家..."/>
+				    
+				    <div class='d-6'><img src='{{ url_for("static",filename="img/index/e8.png") }}'/></div>
+				</div>
+			    <div class='main-12'>
+			    	<div class='main-12-1'>
+			    		<a class='a-4'>全部商家</a>
+			    		<a class='a-4'>美食</a>
+			    		<a class='a-4'>快餐便当</a>
+			    		<a class='a-4'>特色菜系</a>
+			    		<a class='a-4'>异国料理</a>
+			    		<a class='a-4'>小吃宵夜</a>
+			    		<a class='a-4'>甜品饮品</a>
+			    		<a class='a-4'>果蔬生鲜</a>
+			    		<a class='a-4'>商店超市</a>
+			    		<a class='a-4'>鲜花绿植</a>
+			    		<a class='a-4'>医药健康</a>
+			    		<a class='a-4'> 早餐</a>
+			    		<a class='a-4'>午餐</a>
+			    		
+			    	</div>
+			    	<div class='main-12-2'>
+			    		<a class='a-5'>下午茶</a>
+			    		<a class='a-5'>晚餐</a>
+			    		<a class='a-5'>夜宵</a>
+			    		
+			    	</div></div>
+			        </div>
+			 {% for i in content %}
+			    <div class='main-13'>
+			    	<div class='main-111'>
+			    		<div class='-main-111'><div class='main-1111'>
+			    			<img src='{{ url_for("static",filename="img/index/"+i.img) }}'/>
+			    			<span>33分钟</span>
+			    		</div>
+
+			    		<div class='main-1112'>
+			    			<div ><strong>{{ i.shop_name }}</strong></div>
+			    			<div><img src='{{ url_for("static",filename="img/index/e07.png") }}'/></div>
+			    			<div id='pei-1'>配送费5.1</div>
+			    			<div><i style="background:#fff;color:#999999;border:1px solid;padding-right:4px;font-size:10px;">保</i></div>
+			    		</div></div>
+			    	</div>
+			</div>
+            {% endfor %}
+        </div>
+
+
+        <div class='footer'>
+        	<a href='#'>
+        	    <img src="{{ url_for("static",filename="img/index/e9.png") }}"/>
+        	</a>
+        </div>
+		<script>
+
+			$('.nav').css('width',document.body.clientWidth)
+			$('.-main-111').on('mouseover',function (e){
+            var aa=e.target
+
+            var a=`<div id='tooltip'>
+			<div class='d-one'><strong>{{content[0].shop_name}}</strong></div>
+			<div class='d-two'>川湘菜&ensp;简餐</div><hr/>
+			<div class='d-three'>天下美食，人间美味。长生不老，寿与天齐</div>
+			<div class='d-four'><span>配送费4.1</span>&ensp;<span>平均43分钟送达</span></div>
+			<div class='d-five'>大碗厨&ensp;大品牌 &ensp;老百姓的放心厨</div>
+		</div>
+				</div>`
+				$('body').append(a)
+
+				$("#tooltip").css({
+							"top":(e.pageY+1)+"px",
+							"left":(e.pageX+1)+"px"
+						  }).show("fast");
+
+			}).mouseout(function(){
+				$("#tooltip").remove();	 //移除
+			  })
+			.mousemove(function(e){
+				$("#tooltip")
+				.css({
+				  "top":(e.pageY+10) + "px",
+				  "left":(e.pageX+10)  + "px"
+				  });
+			  });
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,1 @@
+#encoding:utf-8from flask02.web import index  #首先得初始化模板

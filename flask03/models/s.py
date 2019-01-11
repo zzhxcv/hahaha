@@ -1,0 +1,1 @@
+#encoding:utf-8from sqlalchemy import Column, Integer, String, Booleanfrom flask03.models.base import db,Basesclass ha(Bases):    print 3    id=Column(Integer,primary_key=True)

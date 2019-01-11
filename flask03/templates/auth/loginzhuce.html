@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+        <script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js'></script>
+		<style>
+			.main{
+				    width: 309px;
+				    height: 500px;
+				    margin: 0 auto;
+				    margin-top: 113px;
+			}
+			.d-1{
+				width:100%;
+				height:auto;
+				text-align: center;
+			}
+			.d-2{
+
+				margin-top:50px ;
+				text-align: center;
+				height: 32px;
+			}
+			.d-2 a{
+				color:#1B9DFF;
+				text-decoration: none;
+				padding-bottom:5px;
+				border-bottom:2px solid;
+				font-size: 14px;
+			}
+			.i-1{
+				width:100%;
+				height:30px;
+			}
+			.i-2{
+				margin-top:15px;
+				margin-bottom: 15px;
+			}
+			.d-3 span{
+					color:#1B9DFF;
+					font-size: 13px;
+
+			}
+			.d-3 p{
+				display: inline;
+				font-size: 13px;
+				color:gray;
+			}
+
+			.i-3{
+				width:100%;
+				height:50px;
+				background:#4CD96F;
+				color:white;
+				margin-top:10px ;
+			}
+			.floor{
+				width: 100%;
+				background:white;
+				text-align: center;
+				margin-top:60px ;
+			}
+			#s-1{
+				font-size:13px;
+			}
+			.s-2{
+				color:gray;
+				font-size:13px;
+			}
+			.s-2 a{
+				color:gray;
+				font-size:13px;
+				text-decoration: none;
+			}
+			.floor{
+				background:#F5F5F5;
+			}
+			.dd-1{
+				margin-top:15px;
+				margin-bottom:15px;
+				height:30px;
+
+			}
+		</style>
+	</head>
+	<body>
+    {% if form and form.errors %}{# 这里与源代码做了更改#}
+            {% for key, error in form.errors.items() %}
+                {% for e in error %}{# 错误信息是一个列表所以还要遍历不然是一个乱码 #}
+                    <div class="alert alert-warning" role="alert">{{ e }}</div>
+                    {% endfor %}
+
+            {% endfor %}
+        {% endif %}
+		<div class='main'>
+
+				<div class='d-1'><img src="{{url_for('static',filename='img/login/e04.png') }}"></div>
+				<div class="d-2"><a href='#'><strong>填写注册信息</strong></a></div>
+
+				<div class='d-3'>
+			        <div class='dd-1'>
+                    {# 通过submit提交必须有name#}
+                        {# 只能用js验证密码 不能用jquery#}
+                        <form action="{{ url_for('web.zh') }}"  method="POST">
+                        <input class='i-1'type='text' name="user"  placeholder="账号" maxlength="10" required>
+                        <input class='i-1 i-2' id='ones0' type="password" name="password" placeholder='密码' required>
+                        <input class="i-1" id='ones' type='password'  placeholder="确认密码" onchange="one()" required>
+                        <input class='i-1 i-2'type='email' name="email" placeholder="邮箱" required/>
+                        <input class='i-3' id="btn-submit" type="submit" value="注册"/>
+                        </form>
+					</div>
+				</div>
+		</div>
+		  <div class='floor'>
+			<span id='s-1'>所有方：上海扎拉斯信息科技有限公司</span><br/>
+			<span class='s-2'>增值电信业务许可证：<a href="#">***************************************</a></span>
+			<span class='s-2'>上海工商行政管理：<a href="#">*****************************************</a></span><br/>
+			<a href='#'><img src='{{url_for('static',filename='img/login/e05.png') }}'></a>
+		    </div>
+    <script>
+        function  one(){
+            var one1= document.getElementById('ones0')
+            var one2=document.getElementById('ones')
+
+            if(one1.value!=one2.value){
+               one2.setCustomValidity('两次密码不一致')
+            }else{
+               one2.setCustomValidity("")
+            }
+        }
+    </script>
+
+	</body>
+</html>

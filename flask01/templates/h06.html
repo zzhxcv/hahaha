@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .t-1{
+
+        }
+    </style>
+</head>
+<body>
+        <form action="{{url_for('hello_world1')}}" method="post">
+               <table>
+                   <tr>
+                       <td class="t-1"><strong>用户名:</strong></td>
+                       <td ><input  id="i-1" type="text" name="user"></td>
+                       <td>{{cc}}</td>
+                   </tr>
+                     <tr>
+                       <td class="t-1"><strong>密码:</strong></td>
+                       <td><input type="password" name="pw"></td>
+                   </tr>
+                   <tr>
+                       <td></td>
+                       <td><input type="submit" value="提交"></td>
+                   </tr>
+                   <tr><td>{{ccc}}</td></tr>
+               </table>
+
+        </form>
+        <p>{{ c}}</p>
+
+</body>
+</html>

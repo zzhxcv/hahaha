@@ -1,0 +1,1 @@
+#encoding:utf-8from flask02.web.lantu1 import web1from flask import render_template@web1.route('/')def numberOne():    return render_template('index.html')

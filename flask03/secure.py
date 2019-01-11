@@ -1,0 +1,1 @@
+#encoding:utf-8SQLALCHEMY_DATABASE_URI='mysql1+cymysql://root:root@localhost:3306/t1'SECRET_KEY='sdfdsfjkldsjflsldjlkfs'

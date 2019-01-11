@@ -1,0 +1,17 @@
+ ul:after {
+            /*在父类后面添加的内容为空*/
+            content: "";
+            /*元素转化为块*/
+            display: block;
+            /*清除左右浮动*/
+            clear: both;
+        }
+ ul{
+            border: 1px solid red;
+            list-style-type: none;
+            background-color:yellow;
+        }
+ ul li{
+            float:left;
+            padding:10px;
+        }

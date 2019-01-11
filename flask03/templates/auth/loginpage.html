@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登陆</title>
+		<style>
+			.main{
+				    width: 309px;
+				    height: 500px;
+				    margin: 0 auto;
+				    margin-top: 113px;
+			}
+			.d-1{
+				width:100%;
+				height:auto;
+				text-align: center;
+			}
+			.d-2{
+				
+				margin-top:50px ;
+				text-align: center;
+				height: 32px;
+			}
+			.d-2 a{
+				color:#1B9DFF;
+				text-decoration: none;
+				padding-bottom:5px; 
+				border-bottom:2px solid;
+				font-size: 14px;
+			}
+			.i-1{
+				width:100%;
+				
+				height:40px;
+			}
+			.i-2{
+				margin-top:20px;
+				margin-bottom: 20px;
+			}
+			.d-3 span{
+					color:#1B9DFF;
+					font-size: 13px;
+					
+			}
+			.d-3 p{
+				display: inline;
+				font-size: 13px;
+				color:gray;
+			}
+			.d-4{
+				text-align: center;
+			}
+			.d-4 button{
+				width:100%;
+				height:50px;
+				background:#4CD96F;
+				color:white;
+				margin-top:20px ;
+			}
+			.floor{
+				width: 100%;
+				background:white;
+				text-align: center;
+				margin-top:60px ;
+			}
+			#s-1{
+				font-size:13px;
+			}
+			.s-2{
+				color:gray;
+				font-size:13px;
+			}
+			.s-2 a{
+				color:gray;
+				font-size:13px;
+				text-decoration: none;
+			}
+			.floor{
+				background:#F5F5F5;
+			}
+			.d-5 a{
+				color:deepskyblue;
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+     {% with messages = get_flashed_messages() %}
+            {% for message in messages %}
+                {% if message %}
+                    <div class="alert alert-warning" role="alert">{{ message }}</div>
+                {% endif %}
+            {% endfor %}
+        {% endwith %}
+     {% if form and form.errors %}{# 这里与源代码做了更改#}
+            {% for key, error in form.errors.items() %}
+                {% for e in error %}{# 错误信息是一个列表所以还要遍历不然是一个乱码 #}
+                    <div class="alert alert-warning" role="alert">{{ e }}</div>
+                    {% endfor %}
+
+            {% endfor %}
+        {% endif %}
+		<div class='main'>
+			<form method="post">
+				<div class='d-1'><img src="{{url_for('static',filename='img/login/e04.png') }}"></div>
+				<div class="d-2"><a href='#'><strong>账号密码登录</strong></a></div>
+				<div class='d-3'>
+					<input class='i-1'type='text' name="user" placeholder="账号" required maxlength="15">
+					<input class='i-1 i-2'type="password"  name='password' placeholder='密码' required maxlength="15">
+				    <p>温馨提示：未注册饿了么账号的手机号登录时将自动注册，且代表您已同意
+				    </p><span>用户服务协议</span>
+				    
+				</div>
+				<div class='d-5'><a href='{{ url_for('web.zh') }}'>注册</a></div>
+				<div class='d-4'><button>登录</button></div>
+			</form>
+			
+		</div>
+		  <div class='floor'>
+			<span id='s-1'>所有方：上海扎拉斯信息科技有限公司</span><br/>
+			<span class='s-2'>增值电信业务许可证：<a href="#">***************************************</a></span>
+			<span class='s-2'>上海工商行政管理：<a href="#">*****************************************</a></span><br/>
+			<a href='#'><img src='{{url_for('static',filename='img/login/e05.png') }}'></a>
+		    </div>
+		
+	</body>
+</html>

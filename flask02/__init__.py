@@ -1,0 +1,1 @@
+#encoding:utf-8from flask import Flaskdef creat_app():    app=Flask(__name__)    lantu1(app) #将蓝图注册进核心对象    app.config.from_object("flask02.setting") #加载配置文件    app.config.from_object('flask02.secure')    return appdef lantu1(app):    from flask02.web.lantu1 import web1    app.register_blueprint(web1)

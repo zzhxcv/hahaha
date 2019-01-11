@@ -1,0 +1,1 @@
+#encoding:utf-8from flask02 import creat_appapp=creat_app()if __name__=="__main__":    app.run()

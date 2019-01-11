@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Flask_main/.idea/AllProject.iml" filepath="$PROJECT_DIR$/../Flask_main/.idea/AllProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../DjTest01/.idea/DjTest01.iml" filepath="$PROJECT_DIR$/../DjTest01/.idea/DjTest01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../DjTest02/.idea/DjTest02.iml" filepath="$PROJECT_DIR$/../DjTest02/.idea/DjTest02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Management_system/.idea/Management_system.iml" filepath="$PROJECT_DIR$/../Management_system/.idea/Management_system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Three_main_databases/.idea/Three_main_databases.iml" filepath="$PROJECT_DIR$/../Three_main_databases/.idea/Three_main_databases.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../blog_Project/.idea/blog_Project.iml" filepath="$PROJECT_DIR$/../blog_Project/.idea/blog_Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../djangoMain/.idea/djangoMain.iml" filepath="$PROJECT_DIR$/../djangoMain/.idea/djangoMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../django_mongo/.idea/django_mongo.iml" filepath="$PROJECT_DIR$/../django_mongo/.idea/django_mongo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../education_platform/.idea/education_platform.iml" filepath="$PROJECT_DIR$/../education_platform/.idea/education_platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../education_platform1/.idea/education_platform1.iml" filepath="$PROJECT_DIR$/../education_platform1/.idea/education_platform1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../fisher/.idea/fisher.iml" filepath="$PROJECT_DIR$/../fisher/.idea/fisher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../flask_mongodb_newsProject/.idea/flask_mongodb_newsProject.iml" filepath="$PROJECT_DIR$/../flask_mongodb_newsProject/.idea/flask_mongodb_newsProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../kugou_crawler/.idea/kugou_crawler.iml" filepath="$PROJECT_DIR$/../kugou_crawler/.idea/kugou_crawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../python3/.idea/python3.iml" filepath="$PROJECT_DIR$/../python3/.idea/python3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../python3_crawler/.idea/python3_crawler.iml" filepath="$PROJECT_DIR$/../python3_crawler/.idea/python3_crawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ss1/.idea/ss1.iml" filepath="$PROJECT_DIR$/../ss1/.idea/ss1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ss3/.idea/ss3.iml" filepath="$PROJECT_DIR$/../ss3/.idea/ss3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sss/.idea/sss.iml" filepath="$PROJECT_DIR$/../sss/.idea/sss.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../t/.idea/t.iml" filepath="$PROJECT_DIR$/../t/.idea/t.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../test/.idea/test.iml" filepath="$PROJECT_DIR$/../test/.idea/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../test02/.idea/test02.iml" filepath="$PROJECT_DIR$/../test02/.idea/test02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../test04/.idea/test04.iml" filepath="$PROJECT_DIR$/../test04/.idea/test04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/untitled2.iml" filepath="$PROJECT_DIR$/.idea/untitled2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../yushu/.idea/yushu.iml" filepath="$PROJECT_DIR$/../yushu/.idea/yushu.iml" />
+    </modules>
+  </component>
+</project>

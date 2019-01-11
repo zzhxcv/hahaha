@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>不</title>
+</head>
+<body>{# #}
+      <p>我的名字是：{{sdfs}}</p>{#jinjia2 语法{{}} 写变量
+{#      {{book}}#}
+      <table>
+
+          <thead> {# 表头#}
+                <tr>
+                    <td>姓名</td>
+                    <td>书名</td>
+                </tr>
+          </thead>
+          <tbody>{# 表内容，主体 #}
+                {% for i in book%} {# for循环 #}
+                    <tr>
+                        <td>{{i.aa}}</td>
+                        <td>{{i.b}}</td>
+                    </tr>
+                {% endfor %}{# for循环结束 #}
+          </tbody>
+      </table>
+</body>
+</html>
+

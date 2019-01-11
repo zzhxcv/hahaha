@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> {%block name%}
+             {%endblock%}</title>
+<link rel="stylesheet" type="text/css" href="{{url_for("static",filename="h02.css")}}">
+</head>
+<body>
+     <ul >
+         <li>首页</li>
+         <li><a href="{{ url_for('hello_world2') }}">衣服</a></li>
+         <li>数码</li>
+         <li>帮助</li>
+     </ul>
+
+</body>
+</html>

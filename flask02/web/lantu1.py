@@ -1,0 +1,1 @@
+#encoding:utf-8from flask import Blueprintweb1=Blueprint('web1',__name__)

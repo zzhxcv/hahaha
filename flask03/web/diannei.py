@@ -1,0 +1,1 @@
+#encoding:utf-8from flask import render_template,url_forfrom flask_login import login_requiredfrom . import web@web.route('/iasfdasdf')def index():    return render_template('index.html')@web.route('/Flask_')@login_requireddef test():    return render_template('test02.html')
